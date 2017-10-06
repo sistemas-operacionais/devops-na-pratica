@@ -1,0 +1,1 @@
+{"virtualbox":{"/src":{"guestpath":"/src","hostpath":"/Users/leo/src/devops-na-pratica/loja-virtual-devops","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/leo/src/devops-na-pratica/vagrant","disabled":false,"__vagrantfile":true}}}

@@ -1,0 +1,30 @@
+VAGRANT_API_VERSION = "2"
+
+Vagrant.configure(VAGRANT_API_VERSION) do |config|
+    config.vm.box = "hashicorp/precise32"
+
+    config.vm.define :db do |db_config|
+        db_config.vm.hostname = "db"
+        db_config.vm.network :private_network,
+            :ip => "192.168.33.10"
+    end
+
+    config.vm.define :web do |www|
+        www.vm.hostname = "web"
+        www.vm.network :private_network,
+            :ip => "192.168.33.12"
+        www.vm.synced_folder "../loja-virtual-devops/",
+            "/src"
+    end
+
+    config.vm.define :maven do |mvn_config|
+        mvn_config.vm.box = "debian/contrib-stretch64"
+        mvn_config.vm.hostname = "maven"
+        mvn_config.vm.network :private_network,
+            :ip => "192.168.33.14"
+        mvn_config.vm.synced_folder "../maven/",
+            "/src/maven"
+        mvn_config.vm.synced_folder "../loja-virtual-devops/",
+                "/src/loja"
+    end
+end

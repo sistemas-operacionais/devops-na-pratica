@@ -1,0 +1,14 @@
+Sep 29, 2017 6:35:37 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Sep 29, 2017 6:35:37 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8443"]
+Sep 29, 2017 6:35:38 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 675 ms
+Sep 29, 2017 6:35:38 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 29, 2017 6:35:38 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.26
+Sep 29, 2017 6:35:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/devopsnapratica.war
+[ WARN] 18:35:43 RuntimeEnvironmentPropertiesConfigurer - Unable to determine runtime environment, using default environment 'development'
+[ERROR] 18:35:46 Ejb3Configuration - Container is providing a null PersistenceUnitRootUrl: discovery impossible
